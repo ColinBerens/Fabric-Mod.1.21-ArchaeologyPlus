@@ -1,5 +1,6 @@
 package net.dercoolin.archaeologyplus;
 
+import net.dercoolin.archaeologyplus.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -13,12 +14,10 @@ public class Archaeology_plus implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	@Override
-	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-		LOGGER.info("Hello Fabric world!");
-	}
+    @Override
+    public void onInitialize() {
+        //ModItemGroup.registerItemGroups();
+        ModItems.registerModItems();
+        //ModBlocks.registerModBlocks();
+    }
 }
