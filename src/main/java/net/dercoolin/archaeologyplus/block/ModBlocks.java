@@ -1,6 +1,7 @@
 package net.dercoolin.archaeologyplus.block;
 
 import net.dercoolin.archaeologyplus.Archaeology_plus;
+import net.dercoolin.archaeologyplus.block.custom.SacrificeBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -15,7 +16,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block SACRIFICE_BLOCK = registerBlock("sacrifice_block",
-            new Block(AbstractBlock.Settings.create().strength(2f)
+            new SacrificeBlock(AbstractBlock.Settings.create().strength(2f)
                     .requiresTool().sounds(BlockSoundGroup.NETHER_BRICKS).luminance(state -> 1)));
     private static Block registerBlock(String name, Block block)
     {
