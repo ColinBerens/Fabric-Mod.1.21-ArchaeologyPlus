@@ -1,8 +1,9 @@
 package net.dercoolin.archaeologyplus;
 
+import net.dercoolin.archaeologyplus.block.ModBlocks;
 import net.dercoolin.archaeologyplus.item.ModItems;
-import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,6 +19,6 @@ public class Archaeology_plus implements ModInitializer {
     public void onInitialize() {
         //ModItemGroup.registerItemGroups();
         ModItems.registerModItems();
-        //ModBlocks.registerModBlocks();
+        ModBlocks.registerModBlocks();
     }
 }

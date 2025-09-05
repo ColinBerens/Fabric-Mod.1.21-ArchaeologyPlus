@@ -15,6 +15,7 @@ public class ModItems {
     //public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item (new Item.Settings()));
 
     public  static final Item ANCIENT_COMPASS = registerItem("ancient_compass", new AncientCompassItem (new Item.Settings()));
+    public static final Item ANCIENT_ARTEFACT = registerItem("ancient_artefact", new Item (new Item.Settings()));
 
     private static Item registerItem(String name, Item item)
     {
@@ -27,6 +28,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
             entries.add(ANCIENT_COMPASS);
+            entries.add(ANCIENT_ARTEFACT);
         });
     }
 }

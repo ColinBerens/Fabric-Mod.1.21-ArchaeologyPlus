@@ -1,3 +1,6 @@
 {
-  "item.archaeologyplus.ancient_compass": "Ancient Compass"
+  "item.archaeologyplus.ancient_compass": "Ancient Compass",
+  "item.archaeologyplus.ancient_artefact": "Ancient Artifact",
+
+  "block.archaeologyplus.sacrifice_block": "Sacrifice Altar"
 }
